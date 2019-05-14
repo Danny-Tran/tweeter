@@ -1,0 +1,36 @@
+section.new-tweet {
+    border-radius: 25px;
+    background: rgb(204, 203, 203);
+    padding: 20px;
+    width: 25em;
+    height: 250px; 
+    margin: auto;
+    border: solid 2px black;
+    
+}
+
+.compose-tweet { 
+    text-align: left;
+    padding: 0 0 5px 0;
+}
+
+hr {
+    margin: 10px, 10px;
+    
+}
+
+.counter {
+    float: right;
+}
+
+textarea {
+    padding: 5px 0 5px 0;
+    width: 350px;
+    margin-bottom: 5px;
+       
+}
+
+input{
+    float: left;
+    padding: 5px 5px 5px 5px
+}
