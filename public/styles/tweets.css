@@ -1,17 +1,20 @@
 section.new-tweet {
     border-radius: 25px;
-    background: rgb(204, 203, 203);
+    background: rgb(216, 214, 214);
     padding: 20px;
     width: 25em;
-    height: 250px; 
+    height: 15em;
     margin: auto;
-    border: solid 2px black;
-    
+    border: solid 2px #00a087;
 }
 
-.compose-tweet { 
+
+
+
+h2.compose-tweet { 
     text-align: left;
-    padding: 0 0 5px 0;
+    
+    
 }
 
 hr {
@@ -19,8 +22,9 @@ hr {
     
 }
 
-.counter {
+span.counter {
     float: right;
+    margin: auto;
 }
 
 textarea {
@@ -32,5 +36,7 @@ textarea {
 
 input{
     float: left;
-    padding: 5px 5px 5px 5px
 }
+
+
+

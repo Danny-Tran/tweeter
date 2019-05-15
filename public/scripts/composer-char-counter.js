@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    console.log("HELLO!")
+ 
     
-    $("textarea").keyup(function(){
+    $("textarea").keydown(function(){
         let count = 0
         count = $("textarea").val().length
         if (count > 140) {
@@ -12,6 +12,11 @@ $(document).ready(function() {
         
     })
     
+    // button.on("click", function(event){
+    //     event.preventDefault();
+    //     const input = $("input[name =content");
+    //     const content = 
+    // })
     
     
     

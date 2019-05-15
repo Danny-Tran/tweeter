@@ -1,0 +1,49 @@
+article {
+    border-radius: 25px;
+    width: 25em;
+    
+    margin: auto;
+    border: solid 2px #00a087;
+    background: rgb(228, 226, 226);
+}
+
+.image{
+    padding: 10px 0 0 10px;
+    /* float: left; */
+    margin: 0 15px 0 0;
+    float:left;
+}
+
+div.tweet-header{
+    font-size: 2em;
+    font-weight: bold;
+    float: left;
+    padding: 15px 0 0 0;
+}
+
+.handle-tag {
+    padding: 25px 0 0 0;
+    float:right;
+}
+
+footer{
+    padding: 0 17em 0 0;
+    
+}
+
+p.tweet {
+    /* float: left; */
+    padding: 4em 0 3em 0
+}
+
+article.hover{
+    margin-top: 2em;
+}
+
+article:hover {
+    opacity: 1.0;
+}
+
+article {
+    opacity: 0.5;
+}

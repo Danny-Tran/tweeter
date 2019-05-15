@@ -31,10 +31,19 @@ body {
 
 main.container {
   width: 450px;
-  height: 1000px;
+  height: auto;
   background-color: #FFFAFA;
   margin: auto;
-  padding: 20px 0 0 0;
+  
   text-align: center;
   border: solid 2px black;
 }
+
+header.header-header{
+  background: #00a087;
+  height: 70px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+
+
