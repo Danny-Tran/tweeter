@@ -121,14 +121,18 @@ function createTweetElement(tweetData) {
 };
 renderTweets(data);
 
+function cleartweet(){
+  $(".textbox").empty();
+}
+
 $(".tweetform").submit(function(event){
   event.preventDefault();
-  var $form = $(this);
+  let $form = $(this);
   let term = $form.find("textarea[name='text']").val();
   let url = $form.attr("action");
-
+  
   $.post(url, {text:term}).done(function(){
-
+    cleartweet();
   })
 });
 
