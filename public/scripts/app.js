@@ -85,17 +85,6 @@ function formatTime (time) {
   return "<1m" + " ago";
 }
 
-// function to render tweet
-function renderTweets(tweets) {
-  // loops through tweets
-  var output = []
-  for (i in tweets){
-    output.push(createTweetElement(tweets[i]))
-  }
-  return $('.tweetContainer').prepend(output); 
-}
-
-
 // creating tweet function using data
 function createTweetElement(tweetData) {
   const $header = $("<header>")
@@ -119,10 +108,26 @@ function createTweetElement(tweetData) {
   $header.append($image).append($username).append($handle)
   return $tweetContainer.append($header).append($tweet).append($footer)
 };
-renderTweets(data);
+
+// function to render tweet
+function renderTweets(tweets) {
+  // loops through tweets
+  
+  for (i in tweets){
+    
+    $(".tweetContainer").prepend(createTweetElement(tweets[i])); 
+  }
+}
 
 function loadtweet(){
-  $("textarea").empty();
+  // $("textarea").empty();
+  $.ajax ({
+    url: "/tweets",
+    method: "GET"
+  }).done(function (tweets) {
+    $("textarea").val("");
+    renderTweets(tweets);
+  })
 }
 
 $(".tweetform").submit(function(event){
@@ -131,12 +136,13 @@ $(".tweetform").submit(function(event){
   let term = $form.find("textarea[name='text']").val();
   let url = $form.attr("action");
   
-  $.post(url, {text:term}).done(function(){
+  $.post("/tweets", {text:term}).done(function(){
     loadtweet();
   })
   
 });
 
+renderTweets(loadtweet());
 
 
 
