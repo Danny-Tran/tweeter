@@ -21,8 +21,9 @@ div.tweet-header{
 }
 
 .handle-tag {
-    padding: 25px 0 0 0;
+    padding: 5px 0 0 0;
     float:right;
+    margin: 1em;
 }
 
 footer{
@@ -35,7 +36,7 @@ footer{
 
 p.tweet {
     /* float: left; */
-    padding: 4em 0 3em 0
+    /* padding: 4em 0 3em 0 */
 }
 
 article.hover{

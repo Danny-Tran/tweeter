@@ -112,15 +112,14 @@ function createTweetElement(tweetData) {
 // function to render tweet
 function renderTweets(tweets) {
   // loops through tweets
-  
-  for (i in tweets){
-    
+    for (i in tweets){
     $(".tweetContainer").prepend(createTweetElement(tweets[i])); 
   }
 }
 
 function loadtweet(){
   // $("textarea").empty();
+  
   $.ajax ({
     url: "/tweets",
     method: "GET"
@@ -132,6 +131,11 @@ function loadtweet(){
 
 $(".tweetform").submit(function(event){
   event.preventDefault();
+if (!$("textarea").val()) {
+  alert("please eneter your tweets")
+} else if ($("textarea").val().length > 140) {
+  alert("please keep your tweets under 140 Characters")
+} else {
   let $form = $(this);
   let term = $form.find("textarea[name='text']").val();
   let url = $form.attr("action");
@@ -139,7 +143,7 @@ $(".tweetform").submit(function(event){
   $.post("/tweets", {text:term}).done(function(){
     loadtweet();
   })
-  
+}
 });
 
 renderTweets(loadtweet());
