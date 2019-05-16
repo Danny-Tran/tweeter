@@ -132,9 +132,9 @@ function loadtweet(){
 $(".tweetform").submit(function(event){
   event.preventDefault();
 if (!$("textarea").val()) {
-  alert("please eneter your tweets")
-} else if ($("textarea").val().length > 140) {
-  alert("please keep your tweets under 140 Characters")
+  $(".errorTag").slideDown().fadeOut(3000)
+  } else if ($("textarea").val().length > 140) {
+  $(".errorTag2").slideDown().fadeOut(3000)
 } else {
   let $form = $(this);
   let term = $form.find("textarea[name='text']").val();
@@ -148,6 +148,13 @@ if (!$("textarea").val()) {
 
 renderTweets(loadtweet());
 
+$(".composeButton").click(function(){
+  event.preventDefault()
+  $(".new-tweet").slideToggle("slow", function(){
+    $("textarea").focus();
+  })
+  // alert("clicked")
+})
 
 
 });

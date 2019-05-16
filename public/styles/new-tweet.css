@@ -10,7 +10,7 @@ article {
     padding: 10px 0 0 10px;
     margin: 0 15px 0 0;
     float:left;
-    border-radius: 15em;
+    border-radius: 30em;
 }
 
 div.tweet-header{
@@ -49,4 +49,13 @@ article:hover {
 
 article {
     opacity: 0.5;
+}
+
+.errorTag{
+    color: red;
+    display: none;
+}
+.errorTag2{
+    color: red;
+    display: none;
 }
