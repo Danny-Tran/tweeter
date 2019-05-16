@@ -138,7 +138,7 @@ if (!$("textarea").val()) {
 } else {
   let $form = $(this);
   let term = $form.find("textarea[name='text']").val();
-  let url = $form.attr("action");
+  // let url = $form.attr("action");
   
   $.post("/tweets", {text:term}).done(function(){
     loadtweet();
