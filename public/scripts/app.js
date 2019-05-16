@@ -121,8 +121,8 @@ function createTweetElement(tweetData) {
 };
 renderTweets(data);
 
-function cleartweet(){
-  $(".textbox").empty();
+function loadtweet(){
+  $("textarea").empty();
 }
 
 $(".tweetform").submit(function(event){
@@ -132,8 +132,9 @@ $(".tweetform").submit(function(event){
   let url = $form.attr("action");
   
   $.post(url, {text:term}).done(function(){
-    cleartweet();
+    loadtweet();
   })
+  
 });
 
 
