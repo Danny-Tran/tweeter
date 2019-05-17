@@ -147,7 +147,7 @@ if (!$("textarea").val()) {
 }
 });
 
-renderTweets(loadtweet());
+loadtweet();
 
 // compose button logic
 $(".composeButton").click(function(){
