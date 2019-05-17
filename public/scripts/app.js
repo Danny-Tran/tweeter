@@ -129,6 +129,7 @@ function loadtweet(){
   })
 }
 
+// Function as conditional and error tag hidden
 $(".tweetform").submit(function(event){
   event.preventDefault();
 if (!$("textarea").val()) {
@@ -148,6 +149,7 @@ if (!$("textarea").val()) {
 
 renderTweets(loadtweet());
 
+// compose button logic
 $(".composeButton").click(function(){
   event.preventDefault()
   $(".new-tweet").slideToggle("slow", function(){
