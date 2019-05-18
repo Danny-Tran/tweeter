@@ -30,19 +30,6 @@ div.tweet-header{
 }
 
 
-footer.time{
-    
-    background: white;
-    border-radius: 0 0 25px 25px;
-    width: 24.7em;
-    height: 3em;    
-    display: flex;
-    
-    
-}
-
-
-
 p.tweet {
    overflow-wrap: break-word;
 }
@@ -53,7 +40,12 @@ article.hover{
 }
 
 
-article:hover {
+article:hover .icons {
+    opacity: 1.0;
+    display: block;
+}
+
+article:hover{
     opacity: 1.0;
 }
 
@@ -63,13 +55,22 @@ article {
 }
 
 .icons{
-    padding: 0 0 0 4.7em;
+    padding: 0 0 0 4em;
     display: absolute;
     display: none;
 }
 
-footer:hover .icons {
+/* footer:hover .icons {
     display: block;
+} */
+
+
+footer.time{
+    background: white;
+    border-radius: 0 0 25px 25px;
+    width: 24.7em;
+    height: 3em;    
+    display: flex;
 }
 
 

@@ -96,9 +96,9 @@ function createTweetElement(tweetData) {
   const $footer = $("<footer>").text(formatTime(tweetData.created_at)).addClass("time")
 
   // const $footerIcons = $("<footer>").addClass("footerIcons")
-  const $flagIcons = $("<img>").attr('src', "https://img.icons8.com/material-outlined/24/000000/flag.png").addClass("icons")
-  const $retweetIcons = $("<img>").attr('src', "https://img.icons8.com/material-rounded/24/000000/retweet.png").addClass("icons")
-  const $likeIcons = $("<img>").attr('src', "https://img.icons8.com/material-outlined/24/000000/facebook-like.png").addClass("icons")
+  const $flagIcons = $("<img>").attr('src', "https://img.icons8.com/color/30/000000/flag.png").addClass("icons")
+  const $retweetIcons = $("<img>").attr('src', "https://img.icons8.com/ultraviolet/30/000000/retweet.png").addClass("icons")
+  const $likeIcons = $("<img>").attr('src', "https://img.icons8.com/dusk/30/000000/facebook-like.png").addClass("icons")
 
   const $tweetContainer = $("<article>")
   .addClass("hover")
