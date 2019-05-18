@@ -63,8 +63,15 @@ article {
 }
 
 .icons{
-    padding: 0 0 0 5em;
+    padding: 0 0 0 4.7em;
+    display: absolute;
+    display: none;
 }
+
+footer:hover .icons {
+    display: block;
+}
+
 
 .errorTag{
     color: red;
