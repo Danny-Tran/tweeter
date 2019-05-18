@@ -94,8 +94,10 @@ function createTweetElement(tweetData) {
   .addClass("tweet")
   
   const $footer = $("<footer>").text(formatTime(tweetData.created_at))
-  
-  
+  const $flagIcons = $("<img>").attr('src', "https://img.icons8.com/material-outlined/24/000000/flag.png").addClass("icons")
+  const $retweetIcons = $("<img>").attr('src', "https://img.icons8.com/material-rounded/24/000000/retweet.png").addClass("icons")
+  const $likeIcons = $("<img>").attr('src', "https://img.icons8.com/material-outlined/24/000000/facebook-like.png").addClass("icons")
+
   const $tweetContainer = $("<article>")
   .addClass("hover")
   
@@ -107,7 +109,7 @@ function createTweetElement(tweetData) {
   .addClass("image")  
   
   $header.append($image).append($username).append($handle)
-  return $tweetContainer.append($header).append($tweet).append($footer)
+  return $tweetContainer.append($header).append($tweet).append($footer.append($flagIcons,$retweetIcons,$likeIcons))
 };
 
 // function to render tweet
