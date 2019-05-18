@@ -157,8 +157,6 @@ $(".composeButton").click(function(){
   })
   // alert("clicked")
 })
-
-
 });
 
 
