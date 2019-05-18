@@ -6,13 +6,12 @@
 html {
   box-sizing: border-box;
 }
+
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
 
 body {
   margin: 0;
@@ -21,20 +20,16 @@ body {
 }
 
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
- body {
+body {
   font-family: 'Roboto Condensed', sans-serif;
 }
+
 
 main.container {
   width: 450px;
   height: auto;
   background-color: #FFFAFA;
   margin: auto;
-  
   text-align: center;
   border: solid 2px black;
 }

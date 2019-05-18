@@ -1,11 +1,10 @@
-
-
 #nav-bar {
     background-color: #00a087;
     color: #e8fdff;
     padding: 0em 2em 0em 2em;
     
 }
+
 
 #nav-bar .logo {
     height: 80px;
@@ -14,11 +13,13 @@
     float: left;
 }
 
+
 #nav-bar span.header {
     font-size: 40px;
     line-height: 200%
     
 }
+
 
 #nav-bar .composeButton {
     float:right; 
@@ -26,9 +27,11 @@
     font-size: 2em;
 }
 
+
 .composeButton:hover {
     opacity: 1.0;
 }
+
 
 .composeButton {
     opacity: 0.5;

@@ -95,6 +95,7 @@ function createTweetElement(tweetData) {
   
   const $footer = $("<footer>").text(formatTime(tweetData.created_at))
   
+  
   const $tweetContainer = $("<article>")
   .addClass("hover")
   
@@ -118,8 +119,6 @@ function renderTweets(tweets) {
 }
 
 function loadtweet(){
-  // $("textarea").empty();
-  
   $.ajax ({
     url: "/tweets",
     method: "GET"
@@ -132,19 +131,18 @@ function loadtweet(){
 // Function as conditional and error tag hidden
 $(".tweetform").submit(function(event){
   event.preventDefault();
-if (!$("textarea").val()) {
-  $(".errorTag").slideDown().fadeOut(3000)
-  } else if ($("textarea").val().length > 140) {
-  $(".errorTag2").slideDown().fadeOut(3000)
-} else {
-  let $form = $(this);
-  let term = $form.find("textarea[name='text']").val();
-  // let url = $form.attr("action");
-  
+  if (!$("textarea").val()) {
+    $(".errorTag").slideDown().fadeOut(3000)
+      } else if ($("textarea").val().length > 140) {
+        $(".errorTag2").slideDown().fadeOut(3000)
+      } else {
+        let $form = $(this);
+        let term = $form.find("textarea[name='text']").val();
+    
   $.post("/tweets", {text:term}).done(function(){
     loadtweet();
-  })
-}
+    })
+  }
 });
 
 loadtweet();
@@ -152,11 +150,10 @@ loadtweet();
 // compose button logic
 $(".composeButton").click(function(){
   event.preventDefault()
-  $(".new-tweet").slideToggle("slow", function(){
-    $("textarea").focus();
+    $(".new-tweet").slideToggle("slow", function(){
+      $("textarea").focus();
+    })
   })
-  // alert("clicked")
-})
 });
 
 

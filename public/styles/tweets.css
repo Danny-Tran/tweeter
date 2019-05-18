@@ -10,30 +10,28 @@ section.new-tweet {
 }
 
 
-
-
 h2.compose-tweet { 
     text-align: left;
-    
-    
 }
+
 
 hr {
     margin: 10px, 10px;
-    
 }
+
 
 span.counter {
     float: right;
     margin: auto;
 }
 
+
 textarea {
     padding: 5px 0 5px 0;
     width: 350px;
     margin-bottom: 5px;
-       
 }
+
 
 input{
     float: left;
