@@ -14,7 +14,7 @@ article {
 }
 
 div.tweet-header{
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     float: left;
     padding: 15px 0 0 0;
@@ -32,11 +32,13 @@ footer{
     border-radius: 25px;
     width: 24.6em;
     height: 3em;
+    /* display: inline; */
 }
 
 p.tweet {
     /* float: left; */
     /* padding: 4em 0 3em 0 */
+    overflow-wrap: break-word;
 }
 
 article.hover{
