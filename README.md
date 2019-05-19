@@ -21,3 +21,5 @@ This repository is the starter code for the project: Students will fork and clon
 
 
 ## Screenshot
+!["Gif of Tweet compose box"] (https://github.com/Danny-Tran/tweeter/blob/master/doc/Tweet-Box.gif)
+!["gif of Tweets"] (https://github.com/Danny-Tran/tweeter/blob/master/doc/Tweets.gif)
