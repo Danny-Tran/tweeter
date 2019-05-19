@@ -58,17 +58,17 @@ article:hover .icons {
 
 .icons{
     padding: 0 0 0 4em;
-    display: absolute;
     display: none;
 }
 
 
 footer.time{
     background: white;
-    border-radius: 0 0 25px 25px;
+    border-radius: 25px;
     width: 24.7em;
     height: 3em;    
     display: flex;
+    padding: 13px 0 0 5px;
 }
 
 
