@@ -12,6 +12,12 @@ This repository is the starter code for the project: Students will fork and clon
 4. Go to <http://localhost:8080/> in your browser.
 
 ## Dependencies
-
+- Body-Parser
+- Chance
+- MongoDB
 - Express
+- Md5
 - Node 5.10.x or above
+
+
+## Screenshot
