@@ -40,11 +40,6 @@ article.hover{
 }
 
 
-article:hover .icons {
-    opacity: 1.0;
-    display: block;
-}
-
 article:hover{
     opacity: 1.0;
 }
@@ -54,15 +49,18 @@ article {
     opacity: 0.5;
 }
 
+
+article:hover .icons {
+    opacity: 1.0;
+    display: block;
+}
+
+
 .icons{
     padding: 0 0 0 4em;
     display: absolute;
     display: none;
 }
-
-/* footer:hover .icons {
-    display: block;
-} */
 
 
 footer.time{
