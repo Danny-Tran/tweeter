@@ -142,7 +142,7 @@ $(".tweetform").submit(function(event){
         let term = $form.find("textarea[name='text']").val();
     
   $.post("/tweets", {text:term}).done(function(){
-    loadtweet();
+    renderTweets();
     })
   }
 });
